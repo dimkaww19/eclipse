@@ -1555,7 +1555,7 @@ do
         if not root then return end
         local startPos = root.Position
         local dist = (targetPos - startPos).Magnitude
-        local steps = math.max(1, math.ceil(dist / 8))
+        local steps = math.max(1, math.ceil(dist / 18))
         for i = 1, steps do
             if not S.autoFarm then return end
             local expected = startPos:Lerp(targetPos, i / steps)
